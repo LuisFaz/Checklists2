@@ -8,7 +8,20 @@
 import UIKit
 
     class ChecklistViewController: UITableViewController {
-
+        
+        override func tableView(
+          _ tableView: UITableView,
+          didSelectRowAt indexPath: IndexPath
+        ){
+        if let cell = tableView.cellForRow(at: indexPath) {
+            if cell.accessoryType == .none {
+              cell.accessoryType = .checkmark
+        } else {
+              cell.accessoryType = .none
+            }
+        }
+          tableView.deselectRow(at: indexPath, animated: true)
+        }
         // MARK: - Table View Data Source
         override func tableView( _ tableView: UITableView, numberOfRowsInSection section: Int ) -> Int { return 100 }
         override func tableView( _ tableView: UITableView, cellForRowAt indexPath: IndexPath ) -> UITableViewCell {
