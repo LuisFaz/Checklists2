@@ -17,14 +17,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChecklistItem" id="Um2-jI-fIw">
-                                <rect key="frame" x="0.0" y="50" width="375" height="31.5"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="32"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Um2-jI-fIw" id="Y5f-c9-NML">
-                                    <rect key="frame" x="0.0" y="0.0" width="335" height="31.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="32"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iO-xH-Hac">
-                                            <rect key="frame" x="26" y="11" width="281" height="21"/>
+                                            <rect key="frame" x="26" y="11" width="281" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -44,7 +44,13 @@
                             <outlet property="delegate" destination="XRo-Nm-cRw" id="pEP-WL-F89"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Checklists" id="kdg-TP-p7K"/>
+                    <navigationItem key="navigationItem" title="Checklists" id="kdg-TP-p7K">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="HzK-V6-Imr">
+                            <connections>
+                                <action selector="addItem" destination="XRo-Nm-cRw" id="O5C-Tt-Ywx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2X-aS-Zaf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
