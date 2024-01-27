@@ -16,27 +16,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChecklistItem" id="Um2-jI-fIw">
-                                <rect key="frame" x="0.0" y="50" width="375" height="32"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ChecklistItem" id="Um2-jI-fIw">
+                                <rect key="frame" x="0.0" y="50" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Um2-jI-fIw" id="Y5f-c9-NML">
-                                    <rect key="frame" x="0.0" y="0.0" width="335" height="32"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="316.5" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iO-xH-Hac">
-                                            <rect key="frame" x="26" y="11" width="281" height="21.5"/>
+                                            <rect key="frame" x="69" y="11" width="227" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="√" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z97-ct-akG">
+                                            <rect key="frame" x="26" y="9" width="14" height="24"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="0iO-xH-Hac" secondAttribute="bottom" constant="-0.5" id="3Hq-bh-w0v"/>
-                                        <constraint firstAttribute="trailing" secondItem="0iO-xH-Hac" secondAttribute="trailing" constant="28" id="6zr-Zk-Yey"/>
-                                        <constraint firstItem="0iO-xH-Hac" firstAttribute="leading" secondItem="Y5f-c9-NML" secondAttribute="leading" constant="26" id="YVU-pP-9QS"/>
-                                        <constraint firstItem="0iO-xH-Hac" firstAttribute="top" secondItem="Y5f-c9-NML" secondAttribute="top" constant="11" id="phd-vh-dFL"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="z97-ct-akG" secondAttribute="bottom" constant="-0.5" id="3wB-xH-FUr"/>
+                                        <constraint firstItem="0iO-xH-Hac" firstAttribute="leading" secondItem="z97-ct-akG" secondAttribute="trailing" constant="29" id="6WZ-Qc-WqP"/>
+                                        <constraint firstItem="z97-ct-akG" firstAttribute="top" secondItem="Y5f-c9-NML" secondAttribute="topMargin" constant="-2" id="QgT-Yo-fmS"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="0iO-xH-Hac" secondAttribute="trailing" constant="12.5" id="Uqe-Hf-Ebx"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="0iO-xH-Hac" secondAttribute="bottom" constant="0.5" id="WC8-L4-Mgv"/>
+                                        <constraint firstItem="z97-ct-akG" firstAttribute="leading" secondItem="Y5f-c9-NML" secondAttribute="leadingMargin" constant="10" id="cY0-Vd-7nA"/>
+                                        <constraint firstItem="0iO-xH-Hac" firstAttribute="top" secondItem="Y5f-c9-NML" secondAttribute="topMargin" id="l5u-3P-BcF"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="hl0-Bh-KXq" kind="show" identifier="EditItem" trigger="accessoryAction" id="9PF-vw-N2S"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -140,6 +152,9 @@
             <point key="canvasLocation" x="-194.40000000000001" y="-87.706146926536732"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9PF-vw-N2S"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
