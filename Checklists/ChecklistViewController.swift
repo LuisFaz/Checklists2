@@ -16,7 +16,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     // Called when the view controller's content view is created.
     override func viewDidLoad() {
       super.viewDidLoad()
-      navigationController?.navigationBar.prefersLargeTitles = true
+      navigationItem.largeTitleDisplayMode = .never
       // Load items
       loadChecklistItems()
     }
