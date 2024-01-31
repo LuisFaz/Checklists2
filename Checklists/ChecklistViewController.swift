@@ -12,6 +12,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     
     // An array to store ChecklistItem objects representing checklist items.
     var items = [ChecklistItem]()
+    var checklist: Checklist!
 
     // Called when the view controller's content view is created.
     override func viewDidLoad() {
@@ -19,6 +20,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
       navigationItem.largeTitleDisplayMode = .never
       // Load items
       loadChecklistItems()
+      title = checklist.name
     }
     // MARK: - Navigation
     
