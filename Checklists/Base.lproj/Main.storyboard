@@ -20,10 +20,16 @@
                             <outlet property="delegate" destination="xW5-Dd-gba" id="jJT-9C-swa"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Checklists" id="zbP-Mq-ubb"/>
+                    <navigationItem key="navigationItem" title="Checklists" id="zbP-Mq-ubb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rIR-Nj-Euh">
+                            <connections>
+                                <segue destination="ELf-YH-HDX" kind="show" identifier="AddChecklist" id="QnE-4z-vaM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="XRo-Nm-cRw" kind="show" identifier="ShowChecklist" id="mYP-IX-w9p"/>
-                        <segue destination="ELf-YH-HDX" kind="show" id="bnZ-1a-T9e"/>
+                        <segue destination="ELf-YH-HDX" kind="show" identifier="EditChecklist" id="bnZ-1a-T9e"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jvV-G2-jXX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -245,6 +251,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Bsd-x1-x91"/>
+        <segue reference="bnZ-1a-T9e"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
