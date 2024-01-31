@@ -93,5 +93,3 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate {
   }
 
 }
-
-
