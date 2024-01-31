@@ -34,6 +34,12 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
 
     list = Checklist(name: "To Do")
     lists.append(list)
+      // Add placeholder item data
+      for list in lists {
+        let item = ChecklistItem()
+        item.text = "Item for \(list.name)"
+        list.items.append(item)
+      }
   }
 
   // MARK: - Navigation
