@@ -106,7 +106,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="0RE-tL-Cfd" kind="show" id="S9x-N8-JzM"/>
+                                            <segue destination="0RE-tL-Cfd" kind="show" identifier="PickIcon" id="crT-eD-3gL"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -131,6 +131,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="doneBarButton" destination="whu-ZS-5am" id="cnR-zC-DYS"/>
+                        <outlet property="iconImage" destination="7o3-PD-SMY" id="TDv-ZU-NOm"/>
                         <outlet property="textField" destination="Pwf-jH-vgc" id="AlQ-de-9R6"/>
                     </connections>
                 </tableViewController>
@@ -174,7 +175,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DUf-Ib-tpB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1443" y="653"/>
+            <point key="canvasLocation" x="1444" y="645"/>
         </scene>
         <!--Checklist-->
         <scene sceneID="Mru-Lc-2m1">
