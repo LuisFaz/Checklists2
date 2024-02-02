@@ -52,11 +52,11 @@
 		B6E067C42B6B07080093F779 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B6D7C51E2B69AC5A0099BAC5 /* AllListViewController.swift */,
+				B6ED7C682B619B9F00607B92 /* ChecklistViewController.swift */,
 				B6E067E02B6C6FDC0093F779 /* IconPickerViewController..swift */,
 				B60248AD2B645E8500C34059 /* ItemDetailViewController.swift */,
-				B6D7C51E2B69AC5A0099BAC5 /* AllListViewController.swift */,
 				B6D7C5222B6A5BB70099BAC5 /* ListDetailViewController.swift */,
-				B6ED7C682B619B9F00607B92 /* ChecklistViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -64,8 +64,8 @@
 		B6E067C52B6B07300093F779 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
-				B60248AB2B61F01900C34059 /* ChecklistItem.swift */,
 				B6D7C5202B69B26A0099BAC5 /* Checklist.swift */,
+				B60248AB2B61F01900C34059 /* ChecklistItem.swift */,
 				B67074282B6ACB95003E5BC9 /* DataModel.swift */,
 			);
 			path = "Data Models";
@@ -81,6 +81,9 @@
 		B6ED7C622B619B9F00607B92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				B6ED7C722B619BA000607B92 /* Info.plist */,
+				B6ED7C6A2B619B9F00607B92 /* Main.storyboard */,
+				B6ED7C6D2B619BA000607B92 /* Assets.xcassets */,
 				B6ED7C612B619B9F00607B92 /* Checklists.app */,
 			);
 			name = Products;
@@ -90,14 +93,11 @@
 		B6ED7C632B619B9F00607B92 /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
+				B6ED7C642B619B9F00607B92 /* AppDelegate.swift */,
+				B6ED7C662B619B9F00607B92 /* SceneDelegate.swift */,
 				B6E067C52B6B07300093F779 /* Data Models */,
 				B6ED7C622B619B9F00607B92 /* Products */,
 				B6E067C42B6B07080093F779 /* View Controllers */,
-				B6ED7C6D2B619BA000607B92 /* Assets.xcassets */,
-				B6ED7C642B619B9F00607B92 /* AppDelegate.swift */,
-				B6ED7C722B619BA000607B92 /* Info.plist */,
-				B6ED7C6A2B619B9F00607B92 /* Main.storyboard */,
-				B6ED7C662B619B9F00607B92 /* SceneDelegate.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
