@@ -13,6 +13,7 @@
 		B6D7C51F2B69AC5A0099BAC5 /* AllListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7C51E2B69AC5A0099BAC5 /* AllListViewController.swift */; };
 		B6D7C5212B69B26A0099BAC5 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7C5202B69B26A0099BAC5 /* Checklist.swift */; };
 		B6D7C5232B6A5BB70099BAC5 /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7C5222B6A5BB70099BAC5 /* ListDetailViewController.swift */; };
+		B6E067E12B6C6FDC0093F779 /* IconPickerViewController..swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E067E02B6C6FDC0093F779 /* IconPickerViewController..swift */; };
 		B6ED7C652B619B9F00607B92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ED7C642B619B9F00607B92 /* AppDelegate.swift */; };
 		B6ED7C672B619B9F00607B92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ED7C662B619B9F00607B92 /* SceneDelegate.swift */; };
 		B6ED7C692B619B9F00607B92 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ED7C682B619B9F00607B92 /* ChecklistViewController.swift */; };
@@ -28,6 +29,7 @@
 		B6D7C51E2B69AC5A0099BAC5 /* AllListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListViewController.swift; sourceTree = "<group>"; };
 		B6D7C5202B69B26A0099BAC5 /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
 		B6D7C5222B6A5BB70099BAC5 /* ListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
+		B6E067E02B6C6FDC0093F779 /* IconPickerViewController..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconPickerViewController..swift; sourceTree = "<group>"; };
 		B6ED7C612B619B9F00607B92 /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6ED7C642B619B9F00607B92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6ED7C662B619B9F00607B92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				B6ED7C6F2B619BA000607B92 /* LaunchScreen.storyboard */,
 				B6ED7C6A2B619B9F00607B92 /* Main.storyboard */,
 				B6ED7C662B619B9F00607B92 /* SceneDelegate.swift */,
+				B6E067E02B6C6FDC0093F779 /* IconPickerViewController..swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E067E12B6C6FDC0093F779 /* IconPickerViewController..swift in Sources */,
 				B6D7C51F2B69AC5A0099BAC5 /* AllListViewController.swift in Sources */,
 				B6ED7C692B619B9F00607B92 /* ChecklistViewController.swift in Sources */,
 				B60248AE2B645E8500C34059 /* ItemDetailViewController.swift in Sources */,
