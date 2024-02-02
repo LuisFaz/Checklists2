@@ -290,6 +290,10 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ekQ-P3-JeG">
                                                     <rect key="frame" x="288" y="6" width="51" height="31.5"/>
+                                                    <color key="onTintColor" red="0.015686274510000001" green="0.66274509800000003" blue="0.92156862750000001" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="shouldRemindToggled:" destination="hl0-Bh-KXq" eventType="valueChanged" id="uBE-EH-NGw"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEr-yo-Tni">
                                                     <rect key="frame" x="38" y="11" width="242" height="22"/>
@@ -371,6 +375,7 @@
                     <connections>
                         <outlet property="datePicker" destination="PAA-k7-Vv3" id="tbp-Zp-nc2"/>
                         <outlet property="doneBarButton" destination="T2Y-Oe-fg8" id="d19-9N-qmG"/>
+                        <outlet property="shouldRemindSwitch" destination="ekQ-P3-JeG" id="xWs-lN-QNT"/>
                         <outlet property="textField" destination="qsh-vC-DCE" id="tyx-zS-UEm"/>
                     </connections>
                 </tableViewController>
